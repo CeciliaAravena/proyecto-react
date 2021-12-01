@@ -8,7 +8,6 @@ function App() {
      <h1>Este es el App.js</h1>
      <NavBar/>
      <Content/>
-     <p>ejemplogi</p>
     </div>
   );
 }
