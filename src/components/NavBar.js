@@ -1,5 +1,9 @@
-import { Navbar, Container, NavDropdown,Nav } from "react-bootstrap";
 
+import Navbar from "react-bootstrap/Navbar"
+import  Container  from "react-bootstrap/Container"
+import  Nav from "react-bootstrap/Nav"
+import  NavDropdown from "react-bootstrap/NavDropdown"
+import CartWidget from "./CartWidget";
 
 const NavBar = () => {
   return(
@@ -21,6 +25,7 @@ const NavBar = () => {
         </NavDropdown>
       </Nav>
     </Navbar.Collapse>
+    <CartWidget/>
   </Container>
 </Navbar>
     </div>

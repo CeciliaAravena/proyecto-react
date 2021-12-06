@@ -1,14 +1,15 @@
 import Content from "./components/Content";
+import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
 import "./styles/styles.css";
 
 function App() {
   return (
-    <div className="App">
-     <h1>Este es el App.js</h1>
+    <center>
      <NavBar/>
+     <ItemListContainer greeting ="Hola soy ItemListContainer" />
      <Content/>
-    </div>
+    </center>
   );
 }
 
