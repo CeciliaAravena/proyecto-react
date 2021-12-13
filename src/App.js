@@ -9,7 +9,6 @@ function App() {
   const max = 10
 
 
-
   return (
     <center>
      <NavBar/>

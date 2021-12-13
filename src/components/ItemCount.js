@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useCounter } from "..useCounter/hooks/useCounter";
+import { useCounter } from "..useCounter/hooks/useCounter"
 
 
 const ItemCount = ({ inicial }) => {

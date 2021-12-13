@@ -3,4 +3,4 @@ export const procesoPesado = (interacciones) => {
         console.log('en proceso...')
     }
     return `${ interecciones } interacciones reaizadas`
-}
+} 
