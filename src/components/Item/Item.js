@@ -1,25 +1,15 @@
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const loadImage = (imageName) => (require(`../../helpers/${imageName}`).default);
-
-export default function Item({item}) {
+const Item = ({ img, price, id }) => {
     return (
-        <>
-            <Col sm={4} key={item.id}>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={loadImage(`${item.image}`)} />
-                    <Card.Body className="text-center">
-                        <Card.Title>{item.name}</Card.Title>
-                        <Card.Subtitle className="mb-2 text-muted">${item.price}</Card.Subtitle>
-                        <Card.Text>
-                            {item.description}
-                        </Card.Text>
-                        <Button variant="secondary" href={`/comprar/${item.id}`} >Comprar</Button>
-                    </Card.Body>
-                </Card>
-            </Col>
-        </>
-    )
-}
+        <div style={{ margin: '10px 20px', border: '2px solid black' }}>
+            <Link to={`/item/${id}`}>
+                <img width="200px" src={img} alt="producto" />
+            </Link>
+            <p>${price}</p>
+        </div>
+    );
+};
+
+export default Item;
